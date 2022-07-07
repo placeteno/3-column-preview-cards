@@ -40,7 +40,7 @@ p {
   display: flex;
   max-width: 58rem;
   height: 31rem;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -52,22 +52,29 @@ p {
 .sedans {
   background-color: var(--bright-orange);
 }
+
 .sedans a {
   color: var(--bright-orange);
+  border: 2px solid var(--very-light-gray);
 }
 
 .suvs {
   background-color: var(--dark-cyan);
 }
+
 .suvs a {
   color: var(--dark-cyan);
+  border: 2px solid var(--very-light-gray);
 }
 
 .luxury {
   background-color: var(--very-dark-cyan);
 }
+
 .luxury a {
   color: var(--very-dark-cyan);
+  border: 2px solid var(--very-light-gray);
+
 }
 
 a {
@@ -84,7 +91,6 @@ a {
 
 a:hover {
   background-color: inherit;
-  border: 2px solid var(--very-light-gray);
   color: var(--very-light-gray);
 }
 
@@ -92,17 +98,25 @@ a:hover {
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a {all: unset; color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  all: unset;
+  color: hsl(228, 45%, 44%);
+}
 
 @media screen and (max-width: 600px) {
   section {
     height: auto;
+
   }
+
   .cards {
     display: block;
-    padding: 20px;
-    border-radius: 10px;
+    margin: 20px;
     overflow: hidden;
     height: auto;
   }
